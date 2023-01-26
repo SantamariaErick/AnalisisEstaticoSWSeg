@@ -1,0 +1,24 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 25 nov. 2021, 22:02:45
+    Author     : Kevin Suntaxi
+*/
+
+
+body {
+    padding-left: 25em;
+    padding-right: 25em;
+    padding-top: 5em;
+    padding-bottom: 11em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        Times, serif;
+    color: rgb(55, 73, 73);
+    /*background-color: #D6EAF8 */
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}

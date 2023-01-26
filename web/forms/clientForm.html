@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Client form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <link href="../css/estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div align="center">
+            <h1>Formulario cliente: </h1><!-- comment -->
+        </div>
+
+        <form action="../jsps/client/addClient.jsp" onsubmit="return validateForm();" method="post">
+            
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input class="form-control" type="text" id="name" name="name" required><br/>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Apellido: </label>
+                <input class="form-control" type="text" id="lastName" name="lastName" required><br/>
+            </div><!-- comment -->
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control" type="email" id="email" name="email" required><br/>
+            </div><!-- comment -->
+            
+            <div class="form-group">
+                <label for="ci">Cédula:</label>
+                <input class="form-control"  type="text" id="ci" name="ci" onChange="validateInp('ci')" required><br/>
+            </div><!-- comment -->
+            
+            <div class="form-group">
+                <label for="dateOfBirth">Fecha de nacimiento:</label>
+                <input class="form-control" type="date" id="birthDate" name="birthDate" max="2007-01-01" min="1922-01-01" required><br/>
+            </div><!-- comment -->
+            
+            <div class="form-group">
+                <label for="telephone">Teléfono convencional (opcional):</label>
+                <input class="form-control" type="tel" id="telephone" name="telephone"><br/>
+            </div><!-- comment -->
+            
+            <div class="form-group">
+                <label for="cellphone">Teléfono celular:</label>
+                <input class="form-control" type="tel" id="cellphone" name="cellphone"><br/>
+            </div><!-- comment -->
+            
+            <div class="form-group">
+                <label for="username">Nombre de usuario:</label>
+                <input class="form-control" type="text" id="username" name="username" required><br/>
+            </div><!-- comment -->
+            
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input class="form-control" type="password" id="password" name="password" required><br/>
+            </div><!-- comment -->
+            <hr/><!-- comment -->
+            <input class="form-control" type="submit" value="Registrar" onclick="validateInp('name');validateInp('lastName');validateInp('ci');validateInp('telephone');validateInp('cellphone')"><br>
+        </form>
+        <script src="../jsProject/validations.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>   
+    </body>
+</html>

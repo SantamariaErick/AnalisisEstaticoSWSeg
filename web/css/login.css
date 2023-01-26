@@ -1,0 +1,11 @@
+/* CSS Document */
+body{
+	background-image: url("../img/library.jpg");
+	padding: 0;
+}
+.row{
+	margin-left: 10px;
+}
+.column1{
+	border-radius: 15px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>User Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+            <div class="container-fluid"> <a class="navbar-brand" href="#"> </a>
+                <button class="navbar-toggler" type="button" 
+                        data-toggle="collapse" data-target="navbarSupportedContent"
+                        aria-controls = "navbatSupportedContent"
+                        aria-expanded = "false"
+                        aria-label = "Toogle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link"></a>&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+        <div class="container-md p-2">
+            <h3 class="text-center pb-0 pt-0 h1">Perfil de usuario</h3>
+            <div class="row">
+                <div class="col-6" align="center">
+                    <div class="col-sm">
+                        <div class="card w-50 card-border mb-8"> <img src="../img/user.png" class="card-img-top" alt=""> </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <form id="form1" name="form1" action="#">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <p>
+                                    <label for="name" class="formulario__label">Nombres: </label>
+                                </p>
+                                <p>
+                                    <input type="text" name="name" id="name" class="form-control" required>
+                                </p>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <p>
+                                    <label for="lastName" class="formulario__label">Apellidos:</label>
+                                </p>
+                                <p>
+                                    <input type="text" name="lastName" id="lastName" class="form-control" required>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <p>
+                                    <label for="email" class="formulario__label">Email: </label>
+                                </p>
+                                <input name="email" type="email" required class="form-control" id="email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <p>
+                                    <label for="cardId" class="formulario__label">Cédula: </label>
+                                </p>
+                                <input name="cardId" type="text" required class="form-control" id="cardId">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <p>
+                                    <label for="dateOfBirth" class="formulario__label">Fecha de nacimiento: </label>
+                                </p>
+                                <input name="dateOfBirth" type="date" required class="form-control" id="dateOfBirth" max="2011-01-01" min="1921-01-01">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <p>
+                                    <label for="telfNumb" class="formulario__label">Número de teléfono: </label>
+                                </p>
+                                <input name="telfNumb" type="tel" required class="form-control" id="telfNumb" placeholder="(00) 000-000">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <p>
+                                    <label for="cellNumb" class="formulario__label">Número celular: </label>
+                                </p>
+                                <input name="cellNumb" type="tel" required class="form-control" id="cellNumb" placeholder="0999999999">
+                            </div>
+                        </div>
+                        <div class="botones">
+                            <button type="submit" name="enviar" id="idsubmit" class="btn btn-warning"><i class="fas fa-save fa-fw"></i>&nbsp;&nbsp;Actualizar</button>
+                            <a href="../index.html">
+                                <button class="btn  btn-warning" type="button" name="return"><i class="fas fa-arrow-circle-left"></i>&nbsp;&nbsp;Regresar</button>
+                            </a> </div>
+                    </form>
+                </div>
+            </div>
+            <!--Footer-->
+            <div id="footer" class="p-5">
+                <div class="container w-50 pt-5">
+                    <div class="row justify-content-md-center">
+                        <div class="col text-center"> <a href="#">
+                                <button class="btn btn-lg rounded-pill btn-warning w-100 p-3 shadow-sm font-weight-bolt">Footer</button>
+                            </a> </div>
+                    </div>
+                    <div class="row justify-content-md-center py-5">
+                        <div class="col text-center font-weight-light">
+                            <p>Informacion de contacto:</p>
+                            <p>Telefono:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/main.js"></script> 
+        <script src="../js/jquery-3.6.0.min.js"></script> 
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="../css/main.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <!---<!-- comment
+        <input type="submit" id="submit"><br>
+        <input type="text" id="mensaje"><br>
+        -->
+        <div id="container" align="center">
+            <h2>Lista de Usuarios</h2>
+            <div class="content"></div>
+        </div>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Cédula de identidad</th>
+                    <th scope="col">Fecha de nacimiento</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Celular</th>
+                    <th scope="col">Usuario</th>
+                </tr>
+            </thead>
+            <tbody id="contentTable">
+            </tbody>
+        </table>
+        <script type="text/javascript" src="../jsProject/restServicesConsumption.js"></script>
+        <script type="text/javascript">
+                    getClientsRest();
+        </script>
+    </body>
+</html>
